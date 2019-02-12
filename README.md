@@ -6,14 +6,14 @@ PCP3 is an unofficial API that returns and array of objects containing parts and
 ## Installation
 
 ```
-$ npm install pcp3 --save
+$ npm install pcpartpickerparser --save
 ```
 
 ## Usage
 
 Load the module via `require`
 ```
-const  pcp3  =  require("pcp3")
+const  pcp3  =  require("pcpartpickerparser")
 ```
 
 Then create an asynchronous function to fetch a parts list.

@@ -7,4 +7,4 @@ workflows:
       - node/test:
           pre-steps:
             - run:
-                command: sudp npm install -g jest
+                command: sudo npm install -g jest

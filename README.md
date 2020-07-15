@@ -5,27 +5,50 @@ PCP3 is an unofficial API that returns and array of objects containing parts and
 
 ## Installation
 
-```
-$ npm install pcpartpickerparser --save
+```bash
+npm install pcpartpickerparser --save
 ```
 
-## Usage
+## Install
 
 Load the module via `require`
-```
+
+```js
 const  pcp3  =  require("pcpartpickerparser")
 ```
 
-Then create an asynchronous function to fetch a parts list.
+Load the module via `import`
 
+```js
+import * as pcp3 from 'pcpartpickerparser'
 ```
-async  function  partsList(){
 
-let  results  =  await  pcp3.fetchParts("https://pcpartpicker.com/list/XXXXXX")
+## Example
 
-console.log(results)
+```js
+import * as pcp3 from 'pcpartpickerparser'
 
+async function returnParts() {
+  try {
+    const parts = pcp3.getPartsList('list id')
+    console.log(parts)
+  } catch (error) {
+    console.log(error)
+  }
 }
+```
 
-partsList() # Call function.
+## API
+
+The tabular data from a standard PC Part Picker list is converted into a JSON array with one object per row.
+
+```json
+[
+  {
+    "type": "CPU",
+    "image": "https://example.com",
+    "name": "Part name",
+    "price": "$9.99"
+  }
+]
 ```

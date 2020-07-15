@@ -20,17 +20,17 @@ const  pcp3  =  require("pcpartpickerparser")
 Load the module via `import`
 
 ```js
-import * as pcp3 from 'pcpartpickerparser'
+import { getPartsList } from 'pcpartpickerparser'
 ```
 
 ## Example
 
 ```js
-import * as pcp3 from 'pcpartpickerparser'
+import { getPartsList } from 'pcpartpickerparser'
 
 async function returnParts() {
   try {
-    const parts = pcp3.getPartsList('list id')
+    const parts = getPartsList('list id')
     console.log(parts)
   } catch (error) {
     console.log(error)

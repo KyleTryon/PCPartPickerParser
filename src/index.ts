@@ -3,8 +3,7 @@ import axios from 'axios'
 
 import {Part} from './interfaces'
 
-export async function getPartsList(listID): Promise<Array<Part>> {
-  console.log("testing: Fetching list " + listID)
+export async function getPartsList(listID: string): Promise<Array<Part>> {
   const response = await axios.get(`https://pcpartpicker.com/list/${listID}`)
   const $ = cheerio.load(response.data)
   let parts = []

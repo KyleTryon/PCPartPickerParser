@@ -1,5 +1,5 @@
 {
-  "name": "PCPartPickerParser",
+  "name": "pcpartpickerparser",
   "version": "1.0.0",
   "description": "PCP3 is an unofficial API that returns and array of objects containing parts and information from a given pcpartpicker.com parts list.",
   "main": "index.js",

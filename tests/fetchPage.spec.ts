@@ -1,5 +1,7 @@
 import {getPartsList} from '../src/index'
 
+// Tests may only be run locally.
+// Testing is ran against live pcpartpicker server, which bans most cloud IPs
 
 describe("Fetch a sample parts list", () => {
   test("Test 404 page", async() => {

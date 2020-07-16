@@ -2,7 +2,6 @@
 
 PCP3 is an unofficial API that returns and array of objects containing parts and information from a given pcpartpicker.com parts list.
 
-
 ## Installation
 
 ```bash
